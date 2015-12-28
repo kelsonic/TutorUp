@@ -2,3 +2,20 @@
   <h1>Welcome to Tutor Hub</h1>
   <h3>A membership site where students meet professors.</h3>
 </div>
+<div class="row text-center">
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Basic Membership</h2>
+      <h4>A free account gives you access to the community.</h4>
+      <br/>
+      <%= link_to "Sign up with Basic", new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Premium Membership</h2>
+      <h4>For only $10/month get access to the community and contact information.</h4>
+      <%= link_to "Sign up with Pro", new_user_registration_path, class: 'btn btn-success btn-lg' %>
+    </div>
+  </div>
+</div>
