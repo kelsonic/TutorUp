@@ -1,4 +1,4 @@
-<div class="jumbotron text-center">
+<div class="jumbotron text-center shadow">
   <h1>Welcome to Tutor Hub</h1>
   <h3>A membership site where students meet professors.</h3>
 </div>
@@ -6,7 +6,7 @@
   
   <% if user_signed_in? %>
     <div class="col-md-6">
-      <div class="well">
+      <div class="well shadow">
         <h2 class="text-center">Your Profile</h2>
         <% if current_user.profile %>
           <%= link_to "Edit Your Profile", edit_user_profile_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
@@ -17,14 +17,14 @@
         <% end %>
       </div>
     </div>
-    <div class="col-md-6 well">
+    <div class="col-md-6 well shadow">
       <h2 class="text-center">The Community</h2>
       <p>Visit the community to meet other professors or students!</p>
       <%= link_to "Visit the Community", users_path, class: 'btn btn-default btn-lg btn-block' %>
     </div>
   <% else %>
     <div class="col-md-6">
-      <div class="well">
+      <div class="well shadow">
         <h2 class="text-center">Basic Membership</h2>
         <h4>A free account gives you access to the community.</h4>
         <br/>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="well">
+      <div class="well shadow">
         <h2 class="text-center">Premium Membership</h2>
         <h4>Only $10/month to access the community and contact details.</h4>
         <br/>

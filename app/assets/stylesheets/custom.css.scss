@@ -3,6 +3,12 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+// Custom Font Awesome CSS
+.fa-users, a.navbar-brand {
+  color: #ed6542 !important;
+}
+
+
 .alert-notice {
   color: #8a6d3b;
   background-color: #fcf8e3;
@@ -11,4 +17,15 @@
 
 hr {
   border-color: #999;
+}
+
+.shadow {
+  -webkit-box-shadow: 4px 4px 5px 1px rgba(153,153,153,1);
+  -moz-box-shadow: 4px 4px 5px 1px rgba(153,153,153,1);
+  box-shadow: 4px 4px 5px 1px rgba(153,153,153,1);
+}
+
+div.well {
+  background-color: white;
+  color: #27374c;
 }

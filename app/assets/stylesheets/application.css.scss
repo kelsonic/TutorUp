@@ -14,3 +14,36 @@
  *= require_self
  */
 
+// Navbar
+.navbar-default {
+  background-color: white;
+  border-bottom: 2px solid #bfcad2 // color: light grey
+}
+
+nav {
+  font-size: 1.7em;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+a.navbar-brand {
+  font-size: 1.3em;
+}
+
+.navbar-right {
+  display: inline-block;
+}
+
+a.btn.btn-primary.navbar-btn {
+  margin-top: 6px;
+}
+
+// Body
+body {
+  background-color: #f1efea;
+}
+
+.jumbotron {
+  background-color: white;
+  color: #27374c;
+}
