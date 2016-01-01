@@ -115,24 +115,24 @@ Tutor Hub is a subscription-based web application.
 
 * Deploy to Heroku using 'git push heroku gitBranch' in terminal
 
-* TutorHub primary colors:
+* Tutor Hub primary colors:
 
     light orange = #ed6542
     forest green = #41b866
-    light grey = #f1efea
-    white = #fff
+    light grey = #f1efea    // background-color
+    white = #fff            
     
     secondary colors:
     
     blue = #287fb8
 
-* TutorHub font color:
+* Tutor Hub font color:
 
     dark grey = #27374c     
     
-* TutorHub line colors:
+* Tutor Hub line colors:
 
-    bottom-border: 1px solid #bfcad2    # light grey
+    bottom-border: 1px solid #bfcad2    // light grey
 
 
 For questions about the codebase contact Kelson at kgadams93@gmail.com.
