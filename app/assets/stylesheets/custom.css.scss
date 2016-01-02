@@ -10,7 +10,7 @@
 }
 
 // Custom Font Awesome CSS
-.fa-users, a.navbar-brand {
+.fa-users, a.navbar-brand, .logo-text {
   color: #ed6542 !important;
 }
 
@@ -41,6 +41,7 @@ div.well {
   border-radius: 100%;
   border: 5px solid #ed6542;
   width: 100%;
+  max-width: 300px;
 }
 
 .about-pic {
@@ -48,3 +49,9 @@ div.well {
   border: 2px solid #f1efea;
   width: 100%;
 }
+
+// .about-banner {
+//   position: relative;
+//   background-repeat: repeat-x;
+//   background-image: linear-gradient(to bottom,#27374c 0,#27374c 100%);
+// }
