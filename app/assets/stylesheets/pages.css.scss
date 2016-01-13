@@ -1,3 +1,17 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// About
+.profile-pic {
+  border-radius: 100%;
+  border: 5px solid #ed6542;
+  width: 100%;
+  max-width: 300px;
+}
+
+.about-pic {
+  border-radius: 5px;
+  border: 2px solid #f1efea;
+  width: 100%;
+}
