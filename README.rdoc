@@ -1,12 +1,14 @@
 == README
 
+This is Kelson's first Rails project.
+
 Tutor Hub is a subscription-based web application.
 
 * Ruby version = 2.2.1p85
 
 * Rails version = 4.1.0
 
-* Gems List = 
+* Gems = 
     actionmailer (4.2.4, 4.1.0)
     actionpack (4.2.4, 4.1.0)
     actionview (4.2.4, 4.1.0)
