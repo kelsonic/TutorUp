@@ -1,40 +1,55 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <div class="text-center jumbotron">
-      <h1>The Community</h1>
-      <p>Welcome to the Tutor Hub community. Users must fill out a profile in order to be visible in the community.</p>
+      <h1>The <span class="blue-color">Community</span></h1>
+      <p>Welcome to the Tutor Hub community.</p>
+      <p>Users must fill out a profile in order to be visible in the community.</p>
     </div>
     
     <hr/>
     
-    <ul class="list-unstyled">
-      <% @users.each do |user| %>
-        <% if user.profile %>
-          <li>
-            <div class="well row <%= cycle('white-bg', '') %>">
-              <div class="col-sm-4 text-center">
-                <% if user.profile.avatar %>
+    <% @users.each do |user| %>
+      <% if user.profile %>
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li>
+              <div class="well row <%= cycle('white-bg', '') %> user-index-well">
+                
+                <div class="col-md-12 text-center">
                   <%= link_to user do %>
-                    <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
+                    <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
                   <% end %>
-                <% end %>
-              </div>
-              
-              <div>
-                <%= link_to user do %>
-                  <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
-                <% end %>
-                <p>
-                  <%= user.profile.job_title %> 
-                    <% if user.plan_id == 2 %>
-                      <span class="label label-danger">PREMIUM</span>
+                </div>
+                
+                <div class="col-md-12 text-center">
+                  <% if user.profile.avatar %>
+                    <%= link_to user do %>
+                      <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
                     <% end %>
-                </p>
+                  <% end %>
+                </div>
+                
+                &nbsp;
+                
+                <div class="col-md-12 text-center">
+                  <p>
+                    <% if user.profile.job_title == "Student" %>
+                      <i class="fa fa-graduation-cap"></i> <%= user.profile.job_title %>
+                    <% else %>
+                      <i class="fa fa-university"></i> <%= user.profile.job_title %>
+                    <% end %> 
+                    <% if user.plan_id == 2 %>
+                      | <span class="label label-danger">PREMIUM</span>
+                    <% end %>
+                  </p>
+                </div>
+                
               </div>
-            </div>
-          </li>
-        <% end %>
+            </li>
+          </ul>
+        </div>
       <% end %>
-    </ul>
+    <% end %>
+    
   </div>
 </div>
