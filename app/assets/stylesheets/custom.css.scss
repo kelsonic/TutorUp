@@ -14,7 +14,6 @@
   color: #ed6542 !important;
 }
 
-
 .alert-notice {
   color: #8a6d3b;
   background-color: #fcf8e3;
@@ -52,5 +51,12 @@ div.well {
 
 .blue-color {
   color: #287fb8;
+}
+
+.navbar-nav li {
+  font-size: 0.8em;
+  a {
+  padding-top: 10px;
+  }
 }
 
