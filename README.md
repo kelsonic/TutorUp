@@ -1,4 +1,4 @@
-# Tutor Up!
+![Tutor Up!](https://github.com/kelsonic/TutorUp/blob/master/app/assets/images/readme-logo.png)
 
 Built with Ruby on Rails for students and professors to connect and contact each other.
 
