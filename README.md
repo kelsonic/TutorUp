@@ -16,7 +16,7 @@ bundle exec rake db:migrate
 rails server
 ```
 
-The app will not be running on localhost:3000.
+The app will now be running on localhost:3000.
 
 ## Usage
 
